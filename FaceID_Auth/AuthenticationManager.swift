@@ -39,6 +39,7 @@ class AuthenticationManager: ObservableObject {
                     // Cannot publish changes on background thread
                     DispatchQueue.main.async {
                         self.isAuthenticated = true
+                        print("isAuthenticated", self.isAuthenticated)
                     }
                 }
             } catch {
@@ -49,6 +50,15 @@ class AuthenticationManager: ObservableObject {
                     self.biometryType = .none
                 }
             }
+        }
+    }
+    
+    func authenticateWithCredentials(username: String, password: String) {
+        if username.lowercased() == "stanley" && password == "123456" {
+            isAuthenticated = true
+        } else {
+            errorDescription = "Credentials are invalid"
+            showAlert = true
         }
     }
 }

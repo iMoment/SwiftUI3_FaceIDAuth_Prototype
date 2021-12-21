@@ -15,6 +15,7 @@
 		91C70B5F27719A5B0047AFFE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C70B5E27719A5B0047AFFE /* PrimaryButton.swift */; };
 		91C70B6227719B100047AFFE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C70B6127719B100047AFFE /* LoginView.swift */; };
 		91C70B6427719DDC0047AFFE /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C70B6327719DDC0047AFFE /* AuthenticationManager.swift */; };
+		91C70B662771ABD00047AFFE /* CredentialsLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C70B652771ABD00047AFFE /* CredentialsLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		91C70B5E27719A5B0047AFFE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		91C70B6127719B100047AFFE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		91C70B6327719DDC0047AFFE /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		91C70B652771ABD00047AFFE /* CredentialsLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				91C70B4D277198410047AFFE /* FaceID_AuthApp.swift */,
+				91C70B6327719DDC0047AFFE /* AuthenticationManager.swift */,
 				91C70B6027719AE60047AFFE /* Views */,
 				91C70B5B277199EF0047AFFE /* Components */,
 				91C70B51277198420047AFFE /* Assets.xcassets */,
 				91C70B53277198420047AFFE /* Preview Content */,
-				91C70B6327719DDC0047AFFE /* AuthenticationManager.swift */,
 			);
 			path = FaceID_Auth;
 			sourceTree = "<group>";
@@ -91,6 +93,7 @@
 			children = (
 				91C70B4F277198410047AFFE /* ContentView.swift */,
 				91C70B6127719B100047AFFE /* LoginView.swift */,
+				91C70B652771ABD00047AFFE /* CredentialsLoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				91C70B50277198410047AFFE /* ContentView.swift in Sources */,
 				91C70B5D27719A040047AFFE /* Title.swift in Sources */,
+				91C70B662771ABD00047AFFE /* CredentialsLoginView.swift in Sources */,
 				91C70B5F27719A5B0047AFFE /* PrimaryButton.swift in Sources */,
 				91C70B6427719DDC0047AFFE /* AuthenticationManager.swift in Sources */,
 				91C70B6227719B100047AFFE /* LoginView.swift in Sources */,
