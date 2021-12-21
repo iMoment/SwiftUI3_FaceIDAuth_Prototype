@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var authenticationManager = AuthenticationManager()
+    
     var body: some View {
         VStack {
             LoginView()
+                .environmentObject(authenticationManager)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)

@@ -14,6 +14,7 @@
 		91C70B5D27719A040047AFFE /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C70B5C27719A040047AFFE /* Title.swift */; };
 		91C70B5F27719A5B0047AFFE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C70B5E27719A5B0047AFFE /* PrimaryButton.swift */; };
 		91C70B6227719B100047AFFE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C70B6127719B100047AFFE /* LoginView.swift */; };
+		91C70B6427719DDC0047AFFE /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C70B6327719DDC0047AFFE /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		91C70B5C27719A040047AFFE /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		91C70B5E27719A5B0047AFFE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		91C70B6127719B100047AFFE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		91C70B6327719DDC0047AFFE /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				91C70B5B277199EF0047AFFE /* Components */,
 				91C70B51277198420047AFFE /* Assets.xcassets */,
 				91C70B53277198420047AFFE /* Preview Content */,
+				91C70B6327719DDC0047AFFE /* AuthenticationManager.swift */,
 			);
 			path = FaceID_Auth;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				91C70B50277198410047AFFE /* ContentView.swift in Sources */,
 				91C70B5D27719A040047AFFE /* Title.swift in Sources */,
 				91C70B5F27719A5B0047AFFE /* PrimaryButton.swift in Sources */,
+				91C70B6427719DDC0047AFFE /* AuthenticationManager.swift in Sources */,
 				91C70B6227719B100047AFFE /* LoginView.swift in Sources */,
 				91C70B4E277198410047AFFE /* FaceID_AuthApp.swift in Sources */,
 			);
@@ -300,6 +304,7 @@
 				DEVELOPMENT_TEAM = 8AG33EWU86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,6 +334,7 @@
 				DEVELOPMENT_TEAM = 8AG33EWU86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
