@@ -9,8 +9,12 @@ import Foundation
 import LocalAuthentication
 
 class AuthenticationManager: ObservableObject {
-    private(set) var context = LAContext()
     @Published private(set) var biometryType: LABiometryType = .none
+    @Published private(set) var isAuthenticated = false
+    @Published private(set) var errorDescription: String?
+    @Published var showAlert = false
+    
+    private(set) var context = LAContext()
     private(set) var canEvaluatePolicy = false
     
     init() {
@@ -20,5 +24,31 @@ class AuthenticationManager: ObservableObject {
     func getBiometryType() {
         canEvaluatePolicy = context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
         biometryType = context.biometryType
+    }
+    
+    func authenticateWithBiometrics() async {
+        context = LAContext()
+        
+        if canEvaluatePolicy {
+            let localizedReason = "Log into your account"
+            
+            do {
+                let success = try await context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: localizedReason)
+                
+                if success {
+                    // Cannot publish changes on background thread
+                    DispatchQueue.main.async {
+                        self.isAuthenticated = true
+                    }
+                }
+            } catch {
+                print(error.localizedDescription)
+                DispatchQueue.main.async {
+                    self.errorDescription = error.localizedDescription
+                    self.showAlert = true
+                    self.biometryType = .none
+                }
+            }
+        }
     }
 }
