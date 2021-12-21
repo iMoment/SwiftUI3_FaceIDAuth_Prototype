@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("FaceID Prototype")
+        VStack {
+            LoginView()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
