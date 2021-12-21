@@ -61,4 +61,8 @@ class AuthenticationManager: ObservableObject {
             showAlert = true
         }
     }
+    
+    func logout() {
+        isAuthenticated = false
+    }
 }
